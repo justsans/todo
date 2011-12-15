@@ -1,0 +1,30 @@
+<%= form_for("user", :url => user_session_path) do |f| %>
+<table>
+  <tr>
+    <td>
+      <%= f.text_field :email %>
+    </td>
+    <td>
+      <%= f.password_field :password %>
+    </td>
+    <td>
+      <%= f.submit 'Sign in', :class => "small blue button" %>
+    </td>
+    <td>
+      <!--<span class="item"></span>-->
+        <span class="small orange button">
+          <%= link_to "Sign up", new_user_registration_path %>
+        </span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </td>
+    <td>
+      <%= link_to "Forgot your password?", new_password_path('user') %>
+    </td>
+  </tr>
+</table>
+<% end %>

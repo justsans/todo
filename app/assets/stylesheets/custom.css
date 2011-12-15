@@ -1,0 +1,103 @@
+#menu {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-family: "Garamond 3 W01";
+}
+
+#menu .item {
+    display: inline;
+    list-style-type: none;
+    padding: 0px;
+    font-size: 18px;
+    border-right: 1px solid #E2E2E2;
+    height: 25px;
+    padding: 0px 22px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #525252;
+    float:left;
+}
+
+#menu .last {
+    border-right: none;
+}
+
+#menu a:visited {
+  color: #006732 !important;
+}
+
+/*put this css inside the body.backup*/
+.greenboxbackground_put_in_body {
+    background-image: url(https://wwws.mint.com/sc/ph2651.40.4.3/images/backgrounds/body.jpg);
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-position-x: 50%;
+    background-position-y: 0%;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #ABDEBE;
+    color: #262C26;
+    font-family: "Lucida Grande",Tahoma,Verdana,Arial,sans-serif;
+    font-size: 11px;
+    padding-top: 5px;
+    height: 850px;
+}
+
+.tasks {
+  padding: 12px;
+  margin: 20px 0 0 0;
+}
+
+#tasks_table a {
+  color: white !important;
+}
+
+#tasks_table {
+    width: 100%;
+    font: 23px bold;
+}
+
+#right_tasks_column {
+    margin: 20px 0 0 20px;
+    width: 50%;
+    vertical-align: top;
+}
+#left_tasks_column {
+    margin: 20px 0 0 0;
+    width: 50%;
+    padding-right: 20px;
+    vertical-align: top;
+}
+
+#high_tasks {
+    /*background: #DC143C !important;*/
+    background-image:-webkit-gradient(linear, 0% 0%, 0% 90%, from(rgba(250,128,114,0.75)), to(rgba(166,42,42,0.9)));
+    background-image:-moz-linear-gradient(top,rgba(250,128,114,0.75), rgba(166,42,42,0.9));
+}
+
+#low_tasks {
+    background-image:-webkit-gradient(linear, 0% 0%, 0% 90%, from(rgba(156,156,156,0.75)), to(rgba(191,191,191,0.9)));
+    background-image:-moz-linear-gradient(top,rgba(156,156,156,0.75), rgba(191,191,191,0.9));
+    /*background-image:    -moz-linear-gradient(top, hsl(0, 80%, 70%), #BADA55);*/
+}
+
+#medium_tasks {
+    background-image:-webkit-gradient(linear, 0% 0%, 0% 90%, from(rgba(255,236,139,0.75)), to(rgba(205,155,29,0.9)));
+    background-image:-moz-linear-gradient(top,rgba(255,236,139,0.75), rgba(205,155,29,0.9));
+}
+
+#done_tasks {
+    background-image:-webkit-gradient(linear, 0% 0%, 0% 90%, from(rgba(152,251,152,0.75)), to(rgba(0,139,69,0.9)));
+    background-image:-moz-linear-gradient(top,rgba(152,251,152,0.75), rgba(0,139,69,0.9));
+    text-decoration: line-through;
+}
+
+#app_buttons {
+    margin: auto;
+    align: center;
+}
+
+
+

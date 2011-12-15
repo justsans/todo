@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <td>
+      <%= current_user.email %>
+    </td>
+    <td>
+       <span class="item"></span>
+    </td>
+    <td>
+        <span class="small black button"><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></span>
+    </td>
+  </tr>
+
+</table>
+

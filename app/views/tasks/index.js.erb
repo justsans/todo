@@ -1,0 +1,3 @@
+/*Replace the html of the div post_lists with the updated new one*/
+alert("hi");
+$("#index_tasks_list").html("<%= escape_javascript( render(:partial => "tasks/display_tasks") ) %>");

@@ -1,0 +1,246 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+body {
+    background-image: url(green_bg_gradient.png);
+    background-repeat: repeat-x;
+}
+
+#page-container {
+   margin: 0 auto;
+   width: 80%;
+}
+
+#content {
+
+}
+
+/** HEADER **/
+
+#header {
+    height: 110px;
+    margin: auto;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #DFE2E1;
+    position: relative;
+}
+
+#site_logo {
+    width: 30%;
+    float:left;
+}
+
+.menu {
+    float: right;
+    margin-top: 60px;
+}
+
+#footer {
+    border-top: 1px solid #DFE2E1;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    color: #DFE2E1;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#user_signed_in {
+    margin-top: 5px;
+    float:right;
+    align:right;
+}
+
+#user_sign_in {
+    margin-right: 30%;
+    margin-top: 5px;
+    width: 40%;
+    float:right;
+}
+
+#user_sign_in_form {
+    float:left;
+}
+
+#app_buttons {
+
+}
+
+/* Input Boxes*/
+input[type="text"], input[type="password"] {
+    font-size: 11px;
+    color: #999;
+    padding: 6px;
+    -moz-box-shadow:inset 2px 2px 5px #ccc;
+    box-shadow:inset 2px 2px 5px #ccc;
+    border: 1px solid #b8b8b8;
+    height: 9px;
+}
+
+/* new task form */
+#new_form_container, #sign_up_container, #sign_up_container {
+   align:center;
+   margin: auto;
+   line-height: 60px;
+   font-size: 18px;
+}
+
+/* Links */
+
+ul
+{
+    list-style-type: none;
+}
+/* Navigation */
+
+nav {
+  background-color: white;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a:visited {
+  color: #09c;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Round corners */
+
+.round {
+  -moz-border-radius:    20px;
+  -webkit-border-radius: 20px;
+  border-radius:         20px;
+}
+
+.item {
+    border-right: 1px solid #E2E2E2;
+    padding-right: 10px;
+    margin-top: 5px;
+    height: 25px;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+a:link {
+    COLOR: #ffff;
+}
+a:visited {
+    COLOR: #ffff;
+}
+a:hover {
+    COLOR: #ffff;
+}
+a:active {
+    COLOR: #ffff;
+}
+
+
+
+/* 1.2 Buttons */
+
+/* ==================== */
+
+
+a.big_button {
+  text-align: center;
+  color: #fff;
+  background: #006400;
+  font-size: 120%;
+  font-weight: bold;
+  padding: 5px 20px 5px 20px;
+}
+
+.button	{
+    display: inline-block;
+	font-family:"HelveticaNeue-Bold", "HelveticaNeue", Helvetica, Arial, Sans-serif;
+	font-weight: bold;
+	color: white !important;
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.button	a:link{
+    color: #FFFFFF !important;
+}
+
+.orange.button	{
+    background-color:  #ffaa44;
+    background: -webkit-gradient(linear,left bottom, left top, color-stop(0.22, rgb(255,144,9)), color-stop(0.81, rgb(255,170,68)));
+    background: -moz-linear-gradient(center bottom, rgb(255,144,9) 22%, rgb(255,170,68) 81%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#ffaa44, endColorStr=#ff9009);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffaa44, endColorstr=#ff9009)";
+}
+
+.orange.button:hover	{
+	background: #ff9009;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#ff9009, endColorStr=#ff9009);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff9009, endColorstr=#ff9009)";
+}
+
+.black.button	{
+    background-color: #808080;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0.22, rgb(88,88,88)), color-stop(0.81, rgb(128,128,128)));
+    background: -moz-linear-gradient(center bottom, rgb(88,88,88) 22%, rgb(128,128,128) 81%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#808080, endColorStr=#585858);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#808080, endColorstr=#585858)";
+}
+
+.black.button:hover	{
+	background: #585858;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#585858, endColorStr=#585858);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#585858, endColorstr=#585858)";
+}
+
+.blue.button	{
+	background-color: #00598b
+}
+
+
+.blue.button:hover	{
+	background-color: #026ca7;
+}
+
+.small.button	{
+	padding: 7px 10px 8px 10px;
+	margin-left: 10px;
+    font-size: 12px;
+}
+
+.medium.button	{
+	padding: 10px 14px 12px 16px;
+    font-size: 16px;
+}
+
+.button .sign_up, .button .login	{
+	padding-left: 12px;
+}

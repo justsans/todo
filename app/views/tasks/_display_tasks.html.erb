@@ -1,0 +1,98 @@
+<table id="tasks_table" >
+  <tr>
+    <td id="left_tasks_column">
+      <div id="high_tasks" class="tasks round">
+        <ul>
+          <% if Task.get_high_tasks != nil %>
+              <% Task.get_high_tasks.each do |task| %>
+                  <li>
+                        <%= form_for task, :url => url_for(:controller => 'tasks', :action => 'do', :id => task.id), :remote => true, :html => {:class => "task_form"} do |f| %>
+                          <%= f.check_box 'complete', :class => "submittable" %>
+                          <a href="<%= edit_task_path(task) %>">
+                              <strong>
+                                <%= task.description %>
+                                <%= task.due_date %>
+                              </strong>
+                            </a>
+                        <% end %>
+                  </li>
+
+              <% end %>
+          <% end %>
+        </ul>
+
+      </div>
+      <div id="medium_tasks" class="tasks round">
+
+        <ul>
+          <% if Task.get_medium_tasks != nil %>
+          <% Task.get_medium_tasks.each do |task| %>
+              <li>
+                <%= form_for task, :url => url_for(:controller => 'tasks', :action => 'do', :id => task.id), :remote => true, :html => {:class => "task_form"} do |f| %>
+                          <%= f.check_box 'complete', :class => "submittable" %>
+                          <a href="<%= edit_task_path(task) %>">
+                              <strong>
+                                <%= task.description %>
+                                <%= task.due_date %>
+                              </strong>
+                            </a>
+                        <% end %>
+
+              </li>
+
+          <% end %>
+              <% end %>
+        </ul>
+
+      </div>
+    </td>
+    <td id="right_tasks_column">
+      <div id="low_tasks" class="tasks round">
+
+        <ul>
+          <% if Task.get_low_tasks != nil %>
+          <% Task.get_low_tasks.each do |task| %>
+              <li>
+                <%= form_for task, :url => url_for(:controller => 'tasks', :action => 'do', :id => task.id), :remote => true, :html => {:class => "task_form"} do |f| %>
+                          <%= f.check_box 'complete', :class => "submittable" %>
+                          <a href="<%= edit_task_path(task) %>">
+                              <strong>
+                                <%= task.description %>
+                                <%= task.due_date %>
+                              </strong>
+                            </a>
+                        <% end %>
+              </li>
+
+          <% end %>
+              <% end %>
+        </ul>
+
+      </div>
+
+      <div id="done_tasks" class="tasks round">
+
+        <ul>
+          <% if Task.get_done_tasks != nil %>
+          <% Task.get_done_tasks.each do |task| %>
+              <li>
+                <%= form_for task, :url => url_for(:controller => 'tasks', :action => 'undo', :id => task.id), :remote => true, :html => {:class => "task_form"} do |f| %>
+                          <%= f.check_box 'complete', :class => "submittable" %>
+                          <a href="<%= edit_task_path(task) %>">
+                              <strong>
+                                <%= task.description %>
+                                <%= task.due_date %>
+                              </strong>
+                            </a>
+                        <% end %>
+              </li>
+
+          <% end %>
+              <% end %>
+        </ul>
+
+      </div>
+
+    </td>
+  </tr>
+</table>

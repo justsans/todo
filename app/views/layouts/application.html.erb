@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo</title>
+  <%= stylesheet_link_tag "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="page-container">
+  <div id="header">
+      <div id="site_logo">
+          <%= image_tag("todo-icon-4.gif", :size=>"200x60")%>
+      </div>
+      <div id="user_signed_in">
+        <% if user_signed_in? %>
+           <%= render :partial => "layouts/user_signed_in" %>
+        <% else %>
+            <div id="user_sign_in_form">
+                 <%= render :partial => "layouts/user_sign_in" %>
+            </div>
+        <% end %>
+      </div>
+
+      <%= render :partial => "layouts/menu" %>
+
+  </div>
+
+  <div id="content">
+    <p class="notice"><%= notice %></p>
+
+    <p class="alert"><%= alert %></p>
+
+    <%= yield %>
+  </div>
+  <div id="footer">@copyright Sans</div>
+</div>
+</body>
+</html>
